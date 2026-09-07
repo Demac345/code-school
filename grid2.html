@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout Designs</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 6vw 7vw;
+
+    background-color: #b8b3d9;
+
+    /* Small background grid */
+    background-image:
+        linear-gradient(#ffffff25 1px, transparent 1px),
+        linear-gradient(90deg, #ffffff25 1px, transparent 1px);
+
+    background-size: 26px 26px;
+}
+
+/* Main 3 × 2 layout */
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 370px 370px;
+    gap: 60px;
+}
+
+/* Every design */
+.design {
+    display: grid;
+    gap: 7px;
+}
+
+.box {
+    background: #f7f8f8;
+}
+
+
+
+.design-one {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.design-one .box1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.design-one .box2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.design-one .box3 {
+    grid-column: 3;
+    grid-row: 1 / 3;
+}
+
+.design-one .box4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.design-one .box5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+
+
+.design-two {
+    grid-template-columns: 1fr 1fr 0.6fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.design-two .box1 {
+    grid-column: 1 / 3;
+}
+
+.design-two .box2 {
+    grid-column: 3;
+}
+
+.design-two .box3 {
+    grid-column: 1;
+}
+
+.design-two .box4 {
+    grid-column: 2;
+}
+
+.design-two .box5 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.design-two .box6 {
+    display: none;
+}
+
+
+
+
+.design-three {
+    grid-template-columns: 1fr 1.2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.design-three .box1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.design-three .box2 {
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+.design-three .box3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.design-three .box4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.design-three .box5 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+
+/* =========================
+   DESIGN 4
+========================= */
+
+.design-four {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.design-four .box1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.design-four .box2 {
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+.design-four .box3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.design-four .box4 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.design-four .box5 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.design-four .box6 {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+.design-four .box7 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+/* =========================
+   DESIGN 5
+========================= */
+
+.design-five {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.design-five .box1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.design-five .box2 {
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+.design-five .box3 {
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.design-five .box4 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.design-five .box5 {
+    grid-column: 1 / 3;
+    grid-row: 3;
+}
+
+.design-five .box6 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+
+/* =========================
+   DESIGN 6
+========================= */
+
+.design-six {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.design-six .box1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.design-six .box2 {
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+.design-six .box3 {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+}
+
+.design-six .box4 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.design-six .box5 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.design-six .box6 {
+    display: none;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 800px) {
+
+    body {
+        padding: 30px 20px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 30px;
+    }
+
+    .design {
+        height: 300px;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- DESIGN 1 -->
+        <div class="design design-one">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+        </div>
+
+        <!-- DESIGN 2 -->
+        <div class="design design-two">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+        </div>
+
+        <!-- DESIGN 3 -->
+        <div class="design design-three">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+        </div>
+
+        <!-- DESIGN 4 -->
+        <div class="design design-four">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+            <div class="box box7"></div>
+        </div>
+
+        <!-- DESIGN 5 -->
+        <div class="design design-five">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+        </div>
+
+        <!-- DESIGN 6 -->
+        <div class="design design-six">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+            <div class="box box5"></div>
+            <div class="box box6"></div>
+        </div>
+
+    </main>
+
+</body>
+</html>
