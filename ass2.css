@@ -18,3 +18,7 @@ div{
         justify-content: center;
         background-size: 400% 400%;
     }
+    h1{
+        font-family: 'Audiowide', cursive;
+        color: white;
+    }
